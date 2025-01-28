@@ -15,3 +15,11 @@ Podcasts: Convert podcast episodes into written content for blogs or show notes.
 Personal Dictation: Use the application for personal notes and reminders, converting spoken ideas into written form.
 # Solution
 EveryMinute solves the problem of capturing and processing spoken information efficiently. By integrating audio recording and speech-to-text capabilities with advanced summarization techniques, the application caters to the needs of various users who require accurate documentation of verbal communications. Whether you are a student, a professional, or a content creator, EveryMinute provides a comprehensive solution for transforming audio into structured, readable text.
+
+
+# Getting Started
+To use EveryMinute, simply clone the repository, install the required dependencies, and run the application. Follow the prompts to record audio, convert it to text, and receive a summarized version of your content.
+git clone [repository-url]
+cd EveryMinute
+pip install -r requirements.txt
+python everyminute.py
