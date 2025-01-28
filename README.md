@@ -19,7 +19,7 @@ EveryMinute solves the problem of capturing and processing spoken information ef
 
 # Getting Started
 To use EveryMinute, simply clone the repository, install the required dependencies, and run the application. Follow the prompts to record audio, convert it to text, and receive a summarized version of your content.
-git clone [repository-url]
-cd EveryMinute
-pip install -r requirements.txt
+/n git clone [repository-url]
+/n cd EveryMinute
+/n pip install -r requirements.txt
 python everyminute.py
