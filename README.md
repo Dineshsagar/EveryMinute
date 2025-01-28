@@ -1,5 +1,5 @@
 # EveryMinute
-EveryMinute is an innovative application designed to streamline the process of converting spoken language into written text. Utilizing cutting-edge speech recognition technology, EveryMinute not only transcribes audio recordings but also employs Natural Language Processing (NLP) to summarize the content effectively. 
+EveryMinute is an innovative application designed to streamline the process of converting spoken language into written text. Utilizing cutting-edge speech recognition technology, EveryMinute not only transcribes audio recordings but also employs Natural Language Processing (NLP) to summarize the content effectively. Currently built to translate Hindi & English
 
 # Features
 Audio Recording: Capture high-quality audio directly from your microphone, with adjustable recording duration.
