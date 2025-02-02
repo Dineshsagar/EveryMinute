@@ -23,8 +23,8 @@ def format_transcription(text):
 
 def welcome_screen():
     """Display the welcome screen."""
-    msgbox('\t\t  Welcome - Speech to Text Converter.', title='Every Minute V1.0', ok_button="Let's Start!",
-           image='C:\\Users\\dinesh.sagar\\OneDrive - Advance Auto Parts\\Desktop\\Speech to text.jpg')
+    msgbox('\n', title='DScribe! V1.0', ok_button="Let's Start!",
+           image='C:\\Users\\dinesh.sagar\\OneDrive - Advance Auto Parts\\Desktop\\Screenshot 2025-02-02 125329.png')
 
 def record_audio():
     """Record audio from the microphone."""
@@ -47,7 +47,7 @@ def record_audio():
         recording_thread.start()
 
         while recording_thread.is_alive():
-            if buttonbox("I'm Listening.....", title='Every Minute V1.0', choices=["Stop Recording"],
+            if buttonbox("I'm Listening.....", title='DScribe! V1.0', choices=["Stop Recording"],
                          image='C:\\Users\\dinesh.sagar\\OneDrive - Advance Auto Parts\\Desktop\\images.png') == "Stop Recording":
                 stop_recording = True
                 recording_thread.join()
@@ -75,7 +75,8 @@ def save_text_to_file(text):
     """Save the transcribed text to a file with timestamp and label."""
     text_file_name = filesavebox("Save recognized text as", default="recognized_text.txt")
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")  # Get the current timestamp
-    content = f"{current_time} - EveryMinute\n{text}"  # Create the content to write
+    content = f"{current_time} - DScribe! - Pre-Release-Version\n{text}"
+    content1 = "Here is the summarized version of session:\n"  # Create the content to write
 
     with open(text_file_name, "w") as text_file:
         text_file.write(content)
@@ -93,7 +94,7 @@ def main():
     welcome_screen()
     
     while True:
-        if buttonbox(title='Every Minute V1.0',
+        if buttonbox(title='DScribe! V1.0',
                      choices=["Start Recording", "Exit"],
                      image='C:\\Users\\dinesh.sagar\\OneDrive - Advance Auto Parts\\Desktop\\Speech to text (1).jpg') == "Start Recording":
             output_file_name = record_audio()
