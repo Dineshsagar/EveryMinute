@@ -10,7 +10,6 @@ from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lsa import LsaSummarizer
 from datetime import datetime  # Importing datetime to get the current timestamp
-
 def format_transcription(text):
     """Format the transcription with punctuation and new lines."""
     sentences = text.split('. ')
