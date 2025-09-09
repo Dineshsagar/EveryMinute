@@ -1,6 +1,5 @@
 ### Pre-Release Version V1.0###
-# Not a complete code - Includes only partial features out of actual intended application #
-
+# Not a complete code - Includes only partial features out of actual intended application 
 
 import soundcard as sc
 import soundfile as sf
